@@ -63,9 +63,9 @@ for current in partialResult:
 
 print("================================================\n")
 
-if 0 >= defuzzyResult <= 2:
+if defuzzyResult >= 0 and defuzzyResult <= 1.9:
     print(str("No se recibio nada de propina"))
-elif defuzzyResult >= 2.1 and defuzzyResult <= 4.9:
+elif defuzzyResult >= 2 and defuzzyResult <= 4.9:
     print(str("La propina esta entre poca y casi nada"))
 elif defuzzyResult == 5:
     print(str("Se ha recibio solo poca propina"))
